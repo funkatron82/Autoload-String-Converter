@@ -14,7 +14,11 @@ function camel_to_dash( $className) {
 function underscore_to_slash( $className ) {
 	return preg_replace('#\\\|_(?!.+\\\)#','/',$className );
 }
-echo underscore_to_slash( camel_to_dash('Admin_WinOfEpicness') );
+
+function dash_to_slash( $className ) {
+	return preg_replace('#\\\|-(?!.+\\\)#','/',$className );
+}
+echo dash_to_slash( 'book1-hello0win' );
 ?>
 </body>
 </html>
