@@ -18,7 +18,7 @@ function underscore_to_slash( $className ) {
 function dash_to_slash( $className ) {
 	return preg_replace('#\\\|-(?!.+\\\)#','/',$className );
 }
-echo dash_to_slash( 'book1-hello0win' );
+echo dash_to_slash( 'book1-hello-win-epic' );
 ?>
 </body>
 </html>
